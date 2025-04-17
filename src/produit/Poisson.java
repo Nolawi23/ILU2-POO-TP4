@@ -9,8 +9,9 @@ public class Poisson extends Produit {
 	}
 
 	@Override
-	public void decritProduit() {
-		System.out.println(getNom() + " pechés " + date);
+	public String decrireProduit() {
+		String description = getNom() + " pechés " + date;
+		return description;
 	}
 
 }

@@ -4,6 +4,8 @@ public interface IProduit {
 
 	String getNom();
 
-	void decritProduit();
+	String decrireProduit();
+
+	int calculerPrix(int prix);
 
 }

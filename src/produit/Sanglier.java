@@ -13,7 +13,13 @@ public class Sanglier extends Produit {
 	}
 
 	@Override
-	public void decritProduit() {
-		System.out.println(getNom() + " de " + poids + unite + " chassé par " + chasseur.getNom());
+	public String decrireProduit() {
+		String description = getNom() + " de " + poids + unite + " chassé par " + chasseur.getNom();
+		return description;
+	}
+	
+	@Override
+	public int calculerPrix(int prix) {
+		return (prix*poids)/1000;
 	}
 }
